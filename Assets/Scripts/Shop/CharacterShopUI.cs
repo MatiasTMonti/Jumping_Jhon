@@ -8,37 +8,37 @@ using DG.Tweening;
 public class CharacterShopUI : MonoBehaviour
 {
     [Header("Layout Settings")]
-    [SerializeField] float itemSpacing = 0.5f;
+    [SerializeField] private float itemSpacing = 0.5f;
     float itemHeight;
 
     [Header("UI elements")]
-    [SerializeField] Image selectedCharacterIcon;
-    [SerializeField] Transform shopMenu;
-    [SerializeField] Transform shopItemsContainer;
-    [SerializeField] GameObject itemPrefab;
+    [SerializeField] private Image selectedCharacterIcon = null;
+    [SerializeField] private Transform shopMenu = null;
+    [SerializeField] private Transform shopItemsContainer = null;
+    [SerializeField] private GameObject itemPrefab = null;
     [Space(20)]
-    [SerializeField] CharacterShopDatabase characterDB;
+    [SerializeField] private CharacterShopDatabase characterDB = null;
 
     [Space(20)]
     [Header("Shop Events")]
-    [SerializeField] GameObject shopUi;
-    [SerializeField] Button openShopButton;
-    [SerializeField] Button closeShopButton;
-    [SerializeField] Button scrollUpButton;
+    [SerializeField] private GameObject shopUi = null;
+    [SerializeField] private Button openShopButton = null;
+    [SerializeField] private Button closeShopButton = null;
+    [SerializeField] private Button scrollUpButton = null;
 
     [Space(20)]
     [Header("Main Menu")]
-    [SerializeField] Image mainMenuCharacterImage;
+    [SerializeField] private Image mainMenuCharacterImage = null;
 
     [Space(20)]
     [Header("Scroll View")]
-    [SerializeField] ScrollRect scrollRect;
+    [SerializeField] private ScrollRect scrollRect = null;
 
     [Space(20)]
     [Header("Purchase Fx and Error messages")]
-    [SerializeField] ParticleSystem purchaseFx;
-    [SerializeField] Transform purchaseFxPos;
-    [SerializeField] TMP_Text noEnoughCoinsText;
+    [SerializeField] private ParticleSystem purchaseFx = null;
+    [SerializeField] private Transform purchaseFxPos = null;
+    [SerializeField] private TMP_Text noEnoughCoinsText = null;
 
     int newSelectedItemIndex = 0;
     int previousSelectedItemIndex = 0;

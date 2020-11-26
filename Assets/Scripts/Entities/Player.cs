@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField] private TextMeshProUGUI startText = null;
     [SerializeField] private SpriteRenderer playerImage = null;
 
-    private float JumpForce = 5.0f;
+    [SerializeField] private AudioClip takeCoinSfx = null;
 
     private Rigidbody2D rigidBody = null;
 
@@ -101,6 +101,8 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Coin"))
         {
+            AudioController.instance.PlaySound(takeCoinSfx);
+
             GameDataManager.AddCoins(10);
 
             GameSharedUI.Instance.UpdateCoinsUIText();

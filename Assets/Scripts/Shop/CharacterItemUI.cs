@@ -8,18 +8,18 @@ using DG.Tweening;
 
 public class CharacterItemUI : MonoBehaviour
 {
-    [SerializeField] Color noItemSelectedColor;
-    [SerializeField] Color itemSelectedColor;
+    [SerializeField] private Color noItemSelectedColor;
+    [SerializeField] private Color itemSelectedColor;
 
     [Space(20.0f)]
-    [SerializeField] Image characterImage;
-    [SerializeField] TMP_Text characterPriceText;
-    [SerializeField] Button characterPurchasedButton;
+    [SerializeField] private Image characterImage;
+    [SerializeField] private TMP_Text characterPriceText;
+    [SerializeField] private Button characterPurchasedButton;
 
     [Space(20.0f)]
-    [SerializeField] Button itemButton;
-    [SerializeField] Image itemImage;
-    [SerializeField] Outline itemOutline;
+    [SerializeField] private Button itemButton;
+    [SerializeField] private Image itemImage;
+    [SerializeField] private Outline itemOutline;
 
     public void SetItemPosition(Vector2 pos)
     {

@@ -31,15 +31,15 @@ public class Shop : MonoBehaviour
         public bool IsPurchased = false;
     }
 
-    public List<ShopItem> ShopItemList;
-    [SerializeField] Animator NoCoinsAnim;
+    [SerializeField] private Animator NoCoinsAnim;
 
     [SerializeField] private GameObject ItemTemplate = null;
-    private GameObject g = null;
     [SerializeField] private Transform ShopScrollView = null;
-    [SerializeField] GameObject shopPanel;
-    Button buyBtn;
+    [SerializeField] private GameObject shopPanel;
 
+    Button buyBtn;
+    public List<ShopItem> ShopItemList;
+    private GameObject g = null;
     private void Start()
     {
         for (int i = 0; i < ShopItemList.Count; i++)

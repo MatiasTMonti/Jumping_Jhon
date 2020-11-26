@@ -6,9 +6,11 @@ public class LevelGenerator : MonoBehaviour
 {
     private const float PLAYER_DISTANCE_SPAWN_LEVEL_PART = 30f;
 
-    [SerializeField] private Transform levelPart_Start;
-    [SerializeField] private List <Transform> levelPartList;
-    [SerializeField] private Player player;
+    private float secondsToDestroy = 5f;
+
+    [SerializeField] private Transform levelPart_Start = null;
+    [SerializeField] private List <Transform> levelPartList = null;
+    [SerializeField] private Player player = null;
 
     private Vector3 lastEndPosition;
 
@@ -22,6 +24,11 @@ public class LevelGenerator : MonoBehaviour
         {
             SpawnLevelPart();
         }
+    }
+
+    void Start()
+    {
+        //StartCoroutine(DestroySelf());
     }
 
     private void Update()
@@ -44,4 +51,10 @@ public class LevelGenerator : MonoBehaviour
         Transform levelPartTransform = Instantiate(levelPart, spawnPosition, Quaternion.identity);
         return levelPartTransform;
     }
+
+    /*IEnumerator DestroySelf()
+    {
+        yield return new WaitForSeconds(secondsToDestroy);
+        Destroy(gameObject);
+    }*/
 }

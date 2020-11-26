@@ -31,17 +31,17 @@ public class Profile : MonoBehaviour
 
     public List<Avatar> AvatarsList;
 
-    [SerializeField] GameObject AvatarUITemplate;
-    [SerializeField] Transform AvatarsScrollView;
+    [SerializeField] private GameObject AvatarUITemplate;
+    [SerializeField] private Transform AvatarsScrollView;
 
     GameObject g;
 
+    [SerializeField] private Color ActiveAvatarColor;
+    [SerializeField] private Color DefaultAvatarColor;
+
+    [SerializeField] private Image CurrentAvatar;
+
     int newSelectedIndex, previousSelectedIndex;
-
-    [SerializeField] Color ActiveAvatarColor;
-    [SerializeField] Color DefaultAvatarColor;
-
-    [SerializeField] Image CurrentAvatar;
 
     private void Start()
     {

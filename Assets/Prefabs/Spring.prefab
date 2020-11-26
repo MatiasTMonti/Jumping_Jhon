@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JumpForce: 1500
+  bounceSfx: {fileID: 8300000, guid: b547265da09f9ce42a737dc6aaab50a8, type: 3}
 --- !u!95 &4220212155810901092
 Animator:
   serializedVersion: 3

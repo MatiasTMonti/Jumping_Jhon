@@ -18,16 +18,16 @@ MonoBehaviour:
     isPurchased: 1
   - image: {fileID: 21300000, guid: 29336e3d6bfcfff40a0e2551603c4a84, type: 3}
     price: 120
-    isPurchased: 1
+    isPurchased: 0
   - image: {fileID: 21300000, guid: 36dad2fff76e9ac4780efb9449f398cb, type: 3}
     price: 200
-    isPurchased: 1
+    isPurchased: 0
   - image: {fileID: 21300000, guid: 6309e085a7432674295a0565b9211ecd, type: 3}
     price: 300
-    isPurchased: 1
+    isPurchased: 0
   - image: {fileID: 21300000, guid: 5339ac5b99c56e540bc95edb80f446d0, type: 3}
     price: 400
-    isPurchased: 1
+    isPurchased: 0
   - image: {fileID: 21300000, guid: 48d3ffd5b16d7464e8f41e69d121604a, type: 3}
     price: 1000
-    isPurchased: 1
+    isPurchased: 0
